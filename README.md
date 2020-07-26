@@ -2,6 +2,16 @@
 
 A simple bash script to convert C code to Algorithm-ish format
 
+
+## Installation
+
+```bash
+sudo apt install clang-format
+git clone https://github.com/Roshan-R/ctoaglo.git
+cd ctoAlgo
+chmod +x ./ctoalgo.sh
+```
+
 ## Screenshots
 
 #### Standard C code
@@ -10,13 +20,6 @@ A simple bash script to convert C code to Algorithm-ish format
 #### After Converting it
 ![Screenshot_2](imgs/Screenshot_2.png)
 
-## Installation
-
-```bash
-git clone https://github.com/Roshan-R/ctoaglo.git
-cd ctoAlgo
-chmod +x ./ctoalgo.sh
-```
 ## Contributing
 
 Contributions are always welcome, free feel to do so!
