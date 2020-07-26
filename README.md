@@ -1,6 +1,6 @@
 # CtoAlgo :notebook_with_decorative_cover:
 
-A simple bash script to convert C code to Algorithm-ish formatter
+A simple bash script to convert C code to Algorithm-ish format
 
 ## Screenshots
 
