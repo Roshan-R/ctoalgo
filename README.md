@@ -8,8 +8,21 @@ A simple bash script to convert C code to Algorithm-ish format
 ```bash
 sudo apt install clang-format
 git clone https://github.com/Roshan-R/ctoaglo.git
-cd ctoAlgo
+cd ctoalgo
 chmod +x ./ctoalgo.sh
+sudo cp ctoalgo.sh /usr/bin/ctoalgo 
+```
+
+## Using
+
+```bash
+ctoalgo example.c
+```
+prints converted code to STDOUT
+for saving to a file, use output redirection
+
+```bash
+ctoalgo example.c > output.txt
 ```
 
 ## Screenshots
