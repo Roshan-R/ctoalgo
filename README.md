@@ -19,6 +19,7 @@ sudo cp ctoalgo.sh /usr/bin/ctoalgo
 ctoalgo example.c
 ```
 prints converted code to STDOUT
+
 for saving to a file, use output redirection
 
 ```bash
