@@ -18,11 +18,14 @@ fi
 clang-format $1  | sed -e "s/}//g" \
     -e "s/{//g" \
     -e "s/#.*//" \
+    -e "s/\/\/.*//g" \
+    -e "s/||/or/g" \
     -e "s/if\s(\(.*\))/If \1 THEN/g" \
     -e "s/printf(\(.*\));/PRINT \1/g" \
+    -e "s/fgets(\([^,]*\).*)/INPUT \1/g" \
     -e "s/\\\n//g" \
     -e "s/for (\w*\s\(\w*\)[^;]*; \([^;]*\);.*)/FOR \1 till \2 do /g" \
     -e "s/;//g" \
     -e "/^$/d" \
     -e "s/while (\(.*\))/WHILE \1/g" \
-    -e "s/return/RETURN/g" | sed -E "s/^void (.*)\(.*\)|^int (.*)\(.*\)/Start of function \1\2/g"
+    -e "s/return/RETURN/g" | sed -E "s/^void (.*)\(.*\)|^int (.*)\(.*\)/Start of function \1\2/g" | sed -r ':a; s%(.*)/\*.*\*/%\1%; ta; /\/\*/ !b; N; ba'
