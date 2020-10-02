@@ -22,8 +22,10 @@ clang-format $1  | sed -e "s/}//g" \
     -e "s/||/or/g" \
     -e "s/if\s(\(.*\))/If \1 THEN/g" \
     -e "s/printf(\(.*\));/PRINT \1/g" \
+    -e "s/puts(\(.*\));/PRINT \1/g" \
     -e "s/fgets(\([^,]*\).*)/INPUT \1/g" \
     -e "s/scanf(\(.*\).*)/INPUT \1/g" \
+    -e "s/gets(\(.*\).*)/INPUT \1/g" \
     -e "s/\\\n//g" \
     -e "s/--/ Decrements /g" \
     -e "s/++/ Increments /g" \
