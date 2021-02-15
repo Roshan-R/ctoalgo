@@ -36,4 +36,4 @@ ctoalgo example.c > output.txt
 
 ## Contributing
 
-Contributions are always welcome, free feel to do so!
+Contributions are always welcome, feel free to do so!
