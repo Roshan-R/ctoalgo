@@ -7,7 +7,7 @@ A simple bash script to convert C code to Algorithm-ish format
 
 ```bash
 sudo apt install clang-format
-git clone https://github.com/Roshan-R/ctoaglo.git
+git clone https://github.com/Roshan-R/ctoalgo.git
 cd ctoalgo
 chmod +x ./ctoalgo.sh
 sudo cp ctoalgo.sh /usr/bin/ctoalgo 
