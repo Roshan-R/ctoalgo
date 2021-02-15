@@ -6,7 +6,7 @@ Help()
    echo
    echo "A simple bash script to convert C code to Algorithm-ish format"
    echo
-   echo "Syntax: algoconv filename"
+   echo "Syntax: ctoalgo filename"
    echo
    exit
 }
